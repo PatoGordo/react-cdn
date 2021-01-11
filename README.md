@@ -11,7 +11,7 @@
 ## Usage
 
 ```sh
-Start &#34;index.html&#34; at a localhost
+Start index.html at a localhost
 ```
 
 ## Author
