@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Conversion Tools</title>
   
   <!-- HTML -->
   
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Styles/style.css">
   
   <!-- Custom Js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" charset="utf-8"></script>
@@ -24,14 +24,19 @@
 
 <body>
   <div id="app">
-      Loading...
+    <div class="loading-page">
+      <img src="Images/loading-animation.gif" alt="loading" />
+      <br>
+      <p>Loading...</p>
+    </div>
   </div>
   <!-- Project Components-->
-  <script src="Components/pages/home.js" type="text/babel" charset="utf-8"></script>
-  <script src="Components/navbar.js" type="text/babel" charset="utf-8"></script>
+  <script src="Components/pages/404.jsx" type="text/babel" charset="utf-8"></script>
+  <script src="Components/pages/home.jsx" type="text/babel" charset="utf-8"></script>
+  <script src="Components/navbar.jsx" type="text/babel" charset="utf-8"></script>
   
   <!-- Main Component -->
-  <script src="Components/main.js" type="text/babel" charset="utf-8"></script>
+  <script src="Components/routes.jsx" type="text/babel" charset="utf-8"></script>
 
 
 </body>
