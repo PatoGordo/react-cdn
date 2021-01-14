@@ -3,6 +3,7 @@ const Link = ReactRouterDOM.Link,
   Switch = ReactRouterDOM.Switch;
 
 const home = props => <Home />
+//const component = props => <component />
 const _404 = props => <Page404 />
 
 const Main = props => (
@@ -10,6 +11,7 @@ const Main = props => (
     <Navbar />
     <Switch>
       <Route path="/" exact component={home} />
+      {/*<Route path="/route" exact component={component} />*/}
       <Route component={_404} />
     </Switch>
   </ReactRouterDOM.HashRouter>
