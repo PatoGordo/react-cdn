@@ -1,0 +1,104 @@
+/*background: rgb(85, 205, 252);background: linear-gradient(90deg, rgba(85, 205, 252, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(247, 168, 184, 1) 100%);*/
+.Navbar{
+  background: linear-gradient(90deg, #5F72BE 0%, #9921E8 100%);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.navbar-logo{
+  color: #fff;
+  font-family: 'Comic Neue', cursive;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+}
+.nav-menu{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+}
+.nav-links{
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  z-index: 2;
+}
+.nav-links:hover{
+  background: rgba(255,255,255,.35);
+  color: #84C9F7;
+  border-radius: 4px;
+  transition: all .2s ease-out
+}
+.fa-bars, .fa-times{
+  color: #fff;
+}
+.fa-times{
+  font-size: 2rem;
+}
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 960px){
+  .Navbar{
+    position: relative;
+  }
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  .nav-menu.active{
+    background: linear-gradient(90deg, #5F72BE 0%, #9921E8 100%);
+    left: 0;
+    opacity: 1;
+    transition: all .5s ease;
+    z-index: 1;
+  }
+  .nav-links{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-links:hover{
+    background: none;
+    color: #fff;
+  }
+  .navbar-logo{
+    margin-left: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+  .menu-icon{
+    margin-right: 10px;
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
