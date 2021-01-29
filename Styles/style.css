@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 
-#app {
+#root {
   width: 100vw;
   align-self: center;
   display: flex;

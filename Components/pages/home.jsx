@@ -1,5 +1,5 @@
 function Home() {
-  document.getElementsByTagName("title")[0].innerHTML = "Your Project - Home"
+  document.title = 'Your Project - Home'
   return (
     <div className="Home">
       Home

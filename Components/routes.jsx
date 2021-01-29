@@ -18,4 +18,4 @@ const Main = props => (
 )
 
 document.addEventListener("DOMContentLoaded", Main)
-ReactDOM.render(<Main/>, document.querySelector("#app"))
+ReactDOM.render(<Main/>, document.querySelector("#root"))

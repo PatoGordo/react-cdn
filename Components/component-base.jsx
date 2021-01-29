@@ -1,8 +1,9 @@
 class Component extends React.Component {
+	document.title = "Your Project - Component"
+	
   render() {
     return (
       <div className="Component">
-        {document.getElementsByTagName("title")[0].innerHTML = "Your Project - Title"}
         Component
       </div>
     )
@@ -12,7 +13,8 @@ class Component extends React.Component {
 //or
 
 function Component() {
-  document.getElementsByTagName("title")[0].innerHTML = "Your Project - Title"
+	document.title = "Your Project - Component"
+  
   return (
     <div className="Component">
       Component
